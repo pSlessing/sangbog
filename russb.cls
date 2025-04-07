@@ -67,10 +67,10 @@
 % Opdater \thesangcnt for at inkludere prefix
 \renewcommand{\thesangcnt}{\newsongprefix\arabic{sangcnt}}
 
-% Kommando for at skifte indekseringsformat
-\newcommand{\switchsongindex}[1]{%
-    \renewcommand{\newsongprefix}{#1} % Saet ny prefix
-    \setcounter{sangcnt}{-1} % Nulstil sangtaeller
+% Sætte prefix og startværdi
+\newcommand{\switchsongindex}[2]{%
+    \renewcommand{\newsongprefix}{#1} % Sæt ny prefix
+    \setcounter{sangcnt}{#2} % Sæt ny startværdi
 }
 
 \def\@sangtitel#1#2{%
