@@ -291,8 +291,8 @@
 \def\fussycols{\setcounter{columnbadness}{0}}
 \parskip=0pt\raggedbottom
 %% 25/4-2004 har Rasmus Villemoes udkommenteret de næste par linjer og
-%% erstattet dem med de efterfølgende  lignende linjer. Forskellen
-%% skulle gerne blive, at der ogsÅ kommer sidetal med i index'et.
+%% erstattet dem med de efterfølgende lignende linjer. Forskellen
+%% skulle gerne blive, at der også kommer sidetal med i index'et.
 
 %\def\@wrindex#1{%
 %  \protected@write\@indexfile{}%
