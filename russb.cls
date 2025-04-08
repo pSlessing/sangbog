@@ -54,8 +54,8 @@
 \def\@defchar#1{%                         % Definerer en karakter til et
    \bgroup                                % eller andet.
       \uccode`\~\expandafter`\csname\string#1\endcsname%
-      \uppercase{%                        % Definitionen tr�der i kraft
-   \egroup                                % n�r karakteren bliver aktiv
+      \uppercase{%                        % Definitionen træder i kraft
+   \egroup                                % når karakteren bliver aktiv
       \def~%                              %
    }%
 }
@@ -176,8 +176,8 @@
 \def\@nvers#1{%
    \bgroup                                % eller andet.
       \uccode`\~`\^^M%
-      \uppercase{%                        % Definitionen tr�der i kraft
-   \egroup                                % n�r karakteren bliver aktiv
+      \uppercase{%                        % Definitionen træder i kraft
+   \egroup                                % når karakteren bliver aktiv
       \def~{\par\penalty#1\hangafter=1\hangindent=1.5em\noindent\ignorespaces}%
                 }%
    \catcode`\^^M=\active\@xnvers
@@ -290,9 +290,9 @@
 \def\sloppycols{\setcounter{columnbadness}{10001}\aftergroup\fussycols}
 \def\fussycols{\setcounter{columnbadness}{0}}
 \parskip=0pt\raggedbottom
-%% 25/4-2004 har Rasmus Villemoes udkommenteret de n�ste par linjer og
-%% erstattet dem med de efterf�lgende lignende linjer. Forskellen
-%% skulle gerne blive, at der ogs� kommer sidetal med i index'et.
+%% 25/4-2004 har Rasmus Villemoes udkommenteret de næste par linjer og
+%% erstattet dem med de efterfølgende  lignende linjer. Forskellen
+%% skulle gerne blive, at der ogsÅ kommer sidetal med i index'et.
 
 %\def\@wrindex#1{%
 %  \protected@write\@indexfile{}%
@@ -318,7 +318,7 @@
 \renewenvironment{theindex}
     {\let\item\@idxitem
      {\Large\bfseries\sffamily\noindent Indholdsfortegnelse\par}%
-     %% Den n�ste linje er ligeledes indsat 25/4-04 for at der kommer en
+     %% Den næste linje er ligeledes indsat 25/4-04 for at der kommer en
      %% forklaring med
 %     {\vspace{\baselineskip}\noindent Tallene i (\textbf{parentes}) angiver sidetal.\par}%
      \begingroup\setlength\multicolsep{1.25\baselineskip}%
